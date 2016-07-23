@@ -34,10 +34,11 @@ function ghprojects_list_project($project) {
     . ' </span>
     </div><!--
  --><div class="grid__item post-col">'
-        . '<h3 class="project-title"><a href="' . $project->html_url . '">'
+        . '<h3 class="project-title"><a target="_blank" href="' . $project->html_url . '">'
             . $project->name
         . '</a></h3>'
-        . '<p>' . $project->description . '</p>'
+        . '<p>' . $project->description
+        . ' <a class="read-more" target="_blank" href="' . $project->html_url . '">View Project</a>.</p>'
         . '</div>
 </div>';
 }
