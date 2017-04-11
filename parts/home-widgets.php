@@ -17,7 +17,6 @@ falcon_section_header_open() ?>
         <?php
             $recent_posts = get_posts(array(
                 'numberposts'   => 5,
-                'category_name' => 'dev',
                 'post_status'   => 'publish',
             ));
 
